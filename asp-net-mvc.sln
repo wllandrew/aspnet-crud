@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCrud", "MvcCrud\MvcCrud.csproj", "{9257F135-E471-5F4D-5F89-DDFAEE42D8C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9257F135-E471-5F4D-5F89-DDFAEE42D8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9257F135-E471-5F4D-5F89-DDFAEE42D8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9257F135-E471-5F4D-5F89-DDFAEE42D8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9257F135-E471-5F4D-5F89-DDFAEE42D8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84FB9D4A-19FD-4685-87CB-5847E50C3DCF}
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcCrud.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MvcCrudContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("MvcCrudContext") ?? throw new InvalidOperationException("Connection string 'MvcCrudContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,7 +27,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Departments}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

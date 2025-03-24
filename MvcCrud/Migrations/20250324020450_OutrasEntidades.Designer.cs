@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcCrud.Data;
 
@@ -10,9 +11,11 @@ using MvcCrud.Data;
 namespace MvcCrud.Migrations
 {
     [DbContext(typeof(MvcCrudContext))]
-    partial class MvcCrudContextModelSnapshot : ModelSnapshot
+    [Migration("20250324020450_OutrasEntidades")]
+    partial class OutrasEntidades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
